@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!-- <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        #questions {
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 30px;
+        }
+
+
+        .control {
+            text-align: center;
+            font-size: 40px;
+        }
+    </style> -->
+    <style>
+        .questions {
+            font-size: 2em
+        }
+
+        .question {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .question > input {
+            width: 100px;
+            margin-left: 10px;
+        }
+
+        .label {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .control {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .title {
+            margin: 0.5em;
+        }
+
+        .index {
+            font-size: 0.8em;
+            padding-right: 0.6em;
+        }
+
+        .check {
+            margin-left: 0.2em;
+
+            
+        }
+
+        .check > img {
+            color: #ff0000;
+            position: relative;
+            top: -0.1em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center title">刘小畅与二宝的数学题</h1>
+        <div class="row h2">
+            <div class="col-6 text-right">
+                分数: <span class='score'>0</span>分
+            </div>
+            <div class="col-6">
+                时间： <span class='time'>0</span>秒
+            </div>
+        </div>
+        <div class='questions'>
+            <div class="row no-gutters">
+                <div class="col-6">
+                    <div class="text-center question">
+                        <label for="question1"><span>1. </span>1 + 1 =</label>                       
+                        <input class="form-control" id="question1">     
+                                       
+                    </div>                
+                </div>
+                <div class="col-6">                  
+                    <div class="text-center question">
+                        <label for="question1"><span>1. </span>1 + 1 =</label>                       
+                        <input class="form-control" id="question1">    
+                        <span class="check"><img src="/assets/img/x.svg" alt="" width="32" height="32" title="Bootstrap"></span>                  
+                    </div>                                    
+                </div>
+            </div>
+
+
+        </div>
+        <div class="control">
+            <button id='submit' type="button" class="btn btn-primary">提交</button>
+        </div>
+    </div>
+
+
+    <script src="./jquery-3.4.1.slim.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./simple_math_for_kid.js"></script>
+
+
+</body>
+
+</html>
