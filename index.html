@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>simple math for kids</title>
     <link rel="stylesheet" href="./bootstrap.min.css">
     <!-- <style>
         h1,
@@ -28,14 +28,24 @@
         }
     </style> -->
     <style>
+        .container {
+            position: relative;
+        }
+
+        .setting {
+            position: absolute;
+            top: 10px;
+            right: 40px;
+        }
+
         .questions {
             font-size: 2em
         }
 
         .question {
             display: flex;
-            align-items: center;
-            justify-content: center;
+           align-items: baseline;
+           
         }
 
         .question > input {
@@ -44,14 +54,41 @@
         }
 
         .label {
-            display: flex;
-            align-items: center;
-            justify-content: left;
+            width: 2em;
+            font-size: 24px;
+        }
+
+        .expression {            
+            display: flex
+        }
+
+        .expression .num1 {
+            text-align: center;
+           width: 40px;
+        }
+
+        .expression .sign {
+            text-align: center;
+            width: 30px;
+        }
+
+        .expression .num2 {
+            text-align: center;
+            width: 40px;
+        }
+
+        .answer {
+           width: 80px;
         }
 
         .control {
             text-align: center;
             font-size: 40px;
+            margin-bottom: 1em;
+        }
+
+        #reset {
+            margin-left: 12em;
         }
 
         .title {
@@ -80,7 +117,7 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center title">刘小畅与二宝的数学题</h1>
+        <h1 class="text-center title">小朋友的数学题</h1>
         <div class="row h2">
             <div class="col-6 text-right">
                 分数: <span class='score'>0</span>分
@@ -111,6 +148,10 @@
         </div>
         <div class="control">
             <button id='submit' type="button" class="btn btn-primary">提交</button>
+            <button id='reset' type="button" class="btn btn-primary">刷新</button>
+        </div>
+        <div class="setting">
+            <a href="/setting.html">设置</a>
         </div>
     </div>
 
